@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="darkpage.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="hero">
+		<nav>
+			<img src="Image/coffe.png" class="logo"><h1 class="logoname">Pabitra</h1>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">services</a></li>
+				<li><a href="#">Hire me</a></li>
+
+			</ul>
+			<img src="Image/moon.png" id="icon">
+			<!-- <img src="logo/light.jfif" id="icon"> -->
+		</nav>
+		<div class="info">
+			<h1>I'm <span>Pabitra Kumar<br></span>Dandapat</h1>
+			<p>This is my official portfolio website to showcase my all works related to web<br>development and UI design.</p>
+			<a href="Pabitra ku Dandapat.pdf" download="Pabitra's CV.pdf" target="-blank">Download CV</a>
+		</div>
+		<div class="img-box">
+			<img src="" class="back-img">
+			<img src="Image/photo.jpg" class="main-img">
+			
+		</div>
+		<div class="social-links">
+			<a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			<a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+			
+		</div>
+	</div>
+	<script>
+		var icon =document.getElementById("icon");
+		
+		icon.onclick =function(){
+			document.body.classList.toggle("dark-theme");
+			 if(document.body.classList.contains("dark-theme")){
+			 	icon.src="Image/light.jfif";
+			 }
+			 else
+			{
+				icon.src = "Image/moon.png"
+			}
+
+		}
+	</script>
+
+</body>
+</html>
